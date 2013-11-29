@@ -33,8 +33,9 @@
 {% assign segments = page.url | split: '/' %}
 {% assign currentpage = segments[1] %}
 {% assign subpage = segments[2] %}
-{% assign pages = site.pages %}
+{% assign pages = site.pages | sort: "name" %}
 {% assign categories = site.categories %}
+
 
 
 {% for page in pages %}
@@ -42,7 +43,7 @@
     {% capture 'url' %}{{page.url | remove: 'index.html' | split: '/' }}{% endcapture %}
     {% capture 'url_length' %}{{ url | size }}{% endcapture %}
     
-    {% unless url_length contains '0' %}
+    {% unless url_length contains '0' %}        
         <li>
             <a href="{{page.url | remove: 'index.html'}}">{{page.title}}</a>                        
             {% for cat in categories %}
