@@ -1,3 +1,4 @@
 name: Ledelse &amp; Dialog
 markdown: redcarpet
 pygments: true
+permalink: /:categories/:title/
