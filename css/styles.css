@@ -1,0 +1,130 @@
+/* @override http://www.ledelseogdialog.no/c/c.css */
+
+/* @group font-sizes */
+
+/* 20/16 = 1.25 */
+
+/* 18/16 = 1.125 */
+
+/* 14/16 = 0.875 */
+
+/* 13/16 = 0.8125 */
+
+/* 12/16 = 0.75 */
+
+/* 11/16 = 0.6875 */
+
+/* 12/14 = 0.857 */
+
+/* 13/14 = 0.928 */
+
+
+
+/* @end */
+
+/* @group base */
+
+a { color: rgb(40%,40%,40%); text-decoration: none; border-bottom: 1px solid orange; outline: none; }
+
+body { font-family: Georgia, serif; background: white; color: rgb(40%,40%,40%); font-size: 100%; line-height: 1.25em; margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+ul, li { list-style-type: none; margin: 0; padding: 0; }
+
+
+
+/* @end */
+
+/* @group structure */
+
+#wrapper-header { }
+
+#header { clear: both; width: 60em; margin: 0 auto 20px auto; padding: 50px 0 5px 0;  }
+
+#wrapper-body { width: 60em; position: absolute; top: 190px; left: 50%; margin-left: -30em; }
+
+#sidebar { width: 15em; float: left; }
+
+#content { width: 43em; float: right; padding-bottom: 90px; }
+
+#wrapper-footer { background: rgb(40%, 40%, 40%); clear: both; position: fixed; bottom: 0; width: 100%; height: 50px;}
+
+#wrapper-header { background: rgb(40%, 40%, 40%);  clear: both; position: fixed; top: 0; width: 100%; height: 50px;}
+
+
+#footer { clear: both; width: 60em; margin: 0 auto; }
+
+
+
+/* @end */
+
+/* @group header */
+
+h1 { margin: 0; font-size: 2em; line-height: 1.2;}
+#header p { font-size: 1.125em; color: white; position: absolute; top: 0; line-height: 50px; margin: 0; padding: 0;}
+
+#footer p { color: #fff; }
+
+#logo { position: absolute; top: 60px; left: 50%; margin-left: -31em; }
+
+
+
+/* @end */
+
+/* @group sidebar */
+
+#side bar p, #sidebar li { font-size: 0.875em; }
+
+li li { font-size: 1em; }
+
+#sidebar > ul { border-bottom: 1px solid silver; }
+
+#sidebar a { display: block; padding: .2em; background: white; border: none;}
+
+
+#sidebar li.active a {
+    background: #efefef;
+}
+
+
+#sidebar li { border-top: 1px solid silver; }
+
+#sidebar li li  { font-size: 0.857em; margin-left: 1em; }
+
+/*#menu ul { display: none; }*/
+
+
+/* @end */
+
+/* @group content */
+
+* {  }
+
+.quest { font-style: italic; }
+
+
+
+/* @end */
+
+/* @group footer */
+
+#footer p { line-height: 50px; margin: 0; padding: 0;}
+
+#footer a { color: white; }
+
+
+
+/* @end */
+
+/* @group Misc */
+
+.questions { font-style: italic; }
+
+a img { border: none; }
+
+
+
+/* @end */
+
+#header a { border: none; }
