@@ -1,4 +1,4 @@
 ledelseogdialog.no
 ==================
 
-ledelseogdialog.no jekyll site 
+Old Expressionengine site converted to Jekyll. 
