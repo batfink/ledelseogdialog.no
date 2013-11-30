@@ -19,55 +19,45 @@
 
 <div id="wrapper-body">	
 	<div id="sidebar">
+        <ul id="menu">
 
-
-<ul id="menu">
-
-
-
-
-
-
-
-
-{% assign segments = page.url | split: '/' %}
-{% assign currentpage = segments[1] %}
-{% assign subpage = segments[2] %}
-{% assign pages = site.pages | sort: "name" %}
-{% assign categories = site.categories %}
+            {% assign segments = page.url | split: '/' %}
+            {% assign currentpage = segments[1] %}
+            {% assign subpage = segments[2] %}
+            {% assign pages = site.pages | sort: "name" %}
+            {% assign categories = site.categories %}
 
 
 
-{% for page in pages %}
+            {% for page in pages %}
 
-    {% capture 'url' %}{{page.url | remove: 'index.html' | split: '/' }}{% endcapture %}
-    {% capture 'url_length' %}{{ url | size }}{% endcapture %}
-    
-    {% unless url_length contains '0' %}        
-        <li>
-            <a href="{{page.url | remove: 'index.html'}}">{{page.title}}</a>                        
-            {% for cat in categories %}
-                {% assign caturl = cat[0] | downcase %}
-                {% if caturl contains url and currentpage contains url %}
-                    <ul>
-                        {% for post in cat[1] %}
-                            {% assign posturlsegments = post.url | split: '/' %}
-                            {% capture 'posturl' %}{% for posturlsegment in posturlsegments | offset: 2 | limit: 1 %}{{ posturlsegment }}{% endfor %}{% endcapture %}
-                            {% if posturl contains subpage %}
-                                <li class="active"><a href="{{ post.url }}">{{ post.title }}</a></li>
-                            {% else %}
-                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                            {% endif %}
-                        {% endfor %}        
-                    </ul>                    
-                {% endif %}    
-            {% endfor %}  
-        </li>
-    {% endunless %}
-{% endfor %}
-
-
-
+                {% capture 'url' %}{{page.url | remove: 'index.html' | split: '/' }}{% endcapture %}
+                {% capture 'url_length' %}{{ url | size }}{% endcapture %}
+                
+                {% unless url_length contains '0' %}        
+                    <li>
+                        <a href="{{page.url | remove: 'index.html'}}">{{page.title}}</a>                        
+                        {% for cat in categories %}
+                            {% assign caturl = cat[0] | downcase %}
+                            {% if caturl contains url and currentpage contains url %}
+                                <ul>
+                                    {% for post in cat[1] %}
+                                        {% assign posturlsegments = post.url | split: '/' %}
+                                        {% capture 'posturl' %}{% for posturlsegment in posturlsegments | offset: 2 | limit: 1 %}{{ posturlsegment }}{% endfor %}{% endcapture %}
+                                        {% if posturl contains subpage %}
+                                            <li class="active"><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                        {% else %}
+                                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                        {% endif %}
+                                    {% endfor %}        
+                                </ul>                    
+                            {% endif %}    
+                        {% endfor %}  
+                    </li>
+                {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 <div id="content">
 	
