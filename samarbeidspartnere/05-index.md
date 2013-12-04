@@ -21,7 +21,7 @@ Vi har hatt et langvarig samarbeid med Jan Heitmann som har skrevet diverse bøk
 
 ## [Relasjonskompetanse AS][]
 
-Stifter av dette selskapet, Jan Spurkeland, har skrevet flere bøker og laget flere verktøy for analyse av mellommenneskelige relasjoner. Vi samarbeider med Jan Spurke-land både når det gjelder bruk av verktøy og metoder og i løsning av krevende oppdrag.
+Stifter av dette selskapet, Jan Spurkeland, har skrevet flere bøker og laget flere verktøy for analyse av mellommenneskelige relasjoner. Vi samarbeider med Jan Spurkeland både når det gjelder bruk av verktøy og metoder og i løsning av krevende oppdrag.
 
 
 [Master Management Norge AS]: http://www.master.no/
